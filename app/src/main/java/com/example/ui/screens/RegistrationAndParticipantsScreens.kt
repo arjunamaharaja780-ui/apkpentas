@@ -31,7 +31,7 @@ import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.filled.School
 import androidx.compose.material.icons.filled.Search
-import androidx.compose.material.icons.filled.Send
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.Shuffle
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
@@ -261,7 +261,7 @@ fun RegisterScreen(
                             .height(52.dp)
                             .testTag("register_submit_button")
                     ) {
-                        Icon(Icons.Default.Send, contentDescription = null, modifier = Modifier.size(18.dp))
+                        Icon(Icons.AutoMirrored.Filled.Send, contentDescription = null, modifier = Modifier.size(18.dp))
                         Spacer(modifier = Modifier.width(8.dp))
                         Text("Daftarkan Peserta", style = MaterialTheme.typography.titleMedium)
                     }

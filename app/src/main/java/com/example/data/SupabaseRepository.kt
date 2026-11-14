@@ -17,6 +17,10 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONArray
 import org.json.JSONObject
 import java.net.URLEncoder
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
+import java.util.TimeZone
 import java.util.concurrent.TimeUnit
 
 data class ServerSnapshot(
@@ -547,9 +551,12 @@ class SupabaseRepository(
         val pesertaArr = executeGet(buildRestUrl("peserta", "select=*"))
         val noUrutArr = executeGet(buildRestUrl("no_urut_sekolah", "select=*"))
 
+        val isoTimestamp = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US).apply {
+            timeZone = TimeZone.getTimeZone("UTC")
+        }.format(Date())
         JSONObject().apply {
             put("version", "2.8")
-            put("timestamp", java.time.Instant.now().toString())
+            put("timestamp", isoTimestamp)
             put("kecamatan", kecamatan)
             put("tahun", tahun)
             put("akses", aksesArr)

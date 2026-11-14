@@ -9,6 +9,7 @@ import android.print.PrintManager
 import android.util.Base64
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.core.graphics.scale
 import com.example.model.DefaultData
 import com.example.model.JuaraDocMode
 import com.example.model.KategoriLomba
@@ -40,7 +41,7 @@ object PrintAndExportHelper {
             val original = BitmapFactory.decodeStream(stream)
             stream.close()
             if (original == null) return null
-            val scaled = Bitmap.createScaledBitmap(original, 200, 200, true)
+            val scaled = original.scale(200, 200)
             val baos = ByteArrayOutputStream()
             scaled.compress(Bitmap.CompressFormat.PNG, 90, baos)
             val bytes = baos.toByteArray()

@@ -31,7 +31,7 @@ import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.Inbox
 import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.MenuBook
+import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.NightsStay
 import androidx.compose.material.icons.filled.Palette
@@ -111,7 +111,7 @@ import kotlin.math.sin
 
 fun iconForCategory(iconKey: String): ImageVector {
     return when {
-        iconKey.contains("book") -> Icons.Default.MenuBook
+        iconKey.contains("book") -> Icons.AutoMirrored.Filled.MenuBook
         iconKey.contains("brain") -> Icons.Default.Psychology
         iconKey.contains("microphone") -> Icons.Default.Mic
         iconKey.contains("pen") -> Icons.Default.Palette
