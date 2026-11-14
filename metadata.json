@@ -1,0 +1,6 @@
+{
+  "name": "Pentas PAI",
+  "description": "Portal PENTAS PAI Kecamatan Bantargebang 2026 untuk pendaftaran peserta, blind judging dewan juri, klasemen real-time, SK Juara, dan ekspor dokumen terintegrasi Supabase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

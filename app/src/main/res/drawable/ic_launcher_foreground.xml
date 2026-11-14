@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Gold 8-pointed Rub el Hizb outer halo (within 66dp safe zone: 21..87) -->
+    <path
+        android:fillColor="#F59E0B"
+        android:fillAlpha="0.22"
+        android:pathData="M54,24 L62,36 L76,32 L72,46 L84,54 L72,62 L76,76 L62,72 L54,84 L46,72 L32,76 L36,62 L24,54 L36,46 L32,32 L46,36 Z" />
+    <!-- Bold Ivory Crescent Moon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,30 C43.8,30 34,39.8 34,52 C34,64.2 43.8,74 56,74 C62.1,74 67.6,71.5 71.6,67.5 C64.2,69.1 56.2,65.2 52.8,58.1 C49.1,50.5 51.6,41.2 58.6,36.5 C60.4,35.3 62.5,34.4 64.6,34.0 C62.0,31.5 59.1,30 56,30 Z" />
+    <!-- Warm Gold 5-pointed Star -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M67,38 L69.6,44.2 L76.3,44.8 L71.2,49.2 L72.7,55.8 L67,52.2 L61.3,55.8 L62.8,49.2 L57.7,44.8 L64.4,44.2 Z" />
+    <!-- Gold Base Ribbon Accent -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M38,77 L70,77 C71.1,77 72,77.9 72,79 C72,80.1 71.1,81 70,81 L38,81 C36.9,81 36,80.1 36,79 C36,77.9 36.9,77 38,77 Z" />
+</vector>
